@@ -9,30 +9,20 @@
     $(document).ready(function(){
       
       $("#submit").click(function(){
-        var R = $("#R-text").val() || $("#R-range").val();
-        var fp = $("#fp-text").val() || $("#fp-range").val();
-        var ne = $("#ne-text").val() || $("#ne-range").val();
-        var fl = $("#fl-text").val() || $("#fl-range").val();
-        var fi = $("#fi-text").val() || $("#fi-range").val();
-        var fc = $("#fc-text").val() || $("#fc-range").val();
-        var L = $("#L-text").val() || $("#L-range").val();
+        var R = $("#R-range").val();
+        var fp = $("#fp-range").val();
+        var ne = $("#ne-range").val();
+        var fl = $("#fl-range").val();
+        var fi = $("#fi-range").val();
+        var fc = $("#fc-range").val();
+        var L = $("#L-range").val();
 
-        // check if any of the input values are not valid numbers
-    if (isNaN(R) || isNaN(fp) || isNaN(ne) || isNaN(fl) || isNaN(fi) || isNaN(fc) || isNaN(L)) {
-    $("#result").html("Please enter valid numbers");
-    return;
-  }
-      // Drake equation calculation
-      var N = R * fp * ne * fl * fi * fc * L;
-  
-     // Convert the result to a floating-point number and round it to 10 decimal places
-     N = parseFloat(N);
-     N = N.toFixed(10);
-  
-    // Display the result
-    $("#result").html(N);
-});
-    $("input[type='range']").on("input", function(){
+        // Drake equation calculation
+        var N = R * fp * ne * fl * fi * fc * L;
+        $("#result").html(N);
+      });
+      
+      $("input[type='range']").on("input", function(){
           $(this).next().val($(this).val());
       });
       
