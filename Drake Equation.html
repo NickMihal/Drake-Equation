@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    /* Define the cone */
-    .cone {
-      width: 0; 
-      height: 0; 
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid red;
-    }
-  </style>
-</head>
+    <h2> Drake Equation Calculator </h2>
 <body>
-  <div class="cone"></div>
+
+<form>
+  R (rate of star formation in our galaxy):<br>
+  <input type="text" name="R" value="10">
+  <br>
+  fp (fraction of stars that have planets):<br>
+  <input type="text" name="fp" value="0.1">
+  <br>
+  ne (fraction of planets that are in the habitable zone):<br>
+  <input type="text" name="ne" value="0.2">
+  <br>
+  fl (fraction of planets that develop life):<br>
+  <input type="text" name="fl" value="0.01">
+  <br>
+  fi (fraction of planets that develop intelligent life):<br>
+  <input type="text" name="fi" value="0.001">
+  <br>
+  fc (fraction of planets that have civilizations that are capable of communicating):<br>
+  <input type="text" name="fc" value="0.0001">
+  <br>
+  L (years that civilizations are able to communicate):<br>
+  <input type="text" name="L" value="1000">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 </body>
 </html>
