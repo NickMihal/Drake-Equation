@@ -1,120 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <div style="display: grid; place-items: center;">
-  <title> Drake Equation Calculator </title>
-    <h2> Drake Equation Calculator </h2>
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      
-      $("#submit").click(function(){
-        var R = $("#R-range").val();
-        var fp = $("#fp-range").val();
-        var ne = $("#ne-range").val();
-        var fl = $("#fl-range").val();
-        var fi = $("#fi-range").val();
-        var fc = $("#fc-range").val();
-        var L = $("#L-range").val();
-
-        // Drake equation calculation
-        var N = R * fp * ne * fl * fi * fc * L;
-        $("#result").html(N);
-      });
-      
-      $("input[type='range']").on("input", function(){
-          $(this).next().val($(this).val());
-      });
-      
-      $("input[type='text']").on("input", function(){
-          $(this).prev().val($(this).val());
-      });
-    });
-  </script>
-</head>
-<body>
-  <form>
-    R (rate of star formation in our galaxy):<br>
-    <input type="range" id="R-range" min="1" max="20" value="10">
-    <input type="text" id="R-text" value="10">
-    <br>
-   fp (fraction of stars that have planets):<br>
-   <input type="range" id="fp-range" min="0" max="1" step="0.01" value="0.1">
-   <input type="text" id="fp-text" value="0.1">
-   <br>
-   ne (fraction of planets that are in the habitable zone):<br>
-   <input type="range" id="ne-range" min="0" max="1" step="0.01" value="0.2">
-   <input type="text" id="ne-text" value="0.2">
-   <br>
-   fl (fraction of planets that develop life):<br>
-   <input type="range" id="fl-range" min="0" max="1" step="0.01" value="0.01">
-   <input type="text" id="fl-text" value="0.01">
-   <br>
-   fi (fraction of planets that develop intelligent life):<br>
-   <input type="range" id="fi-range" min="0" max="1" step="0.01" value="0.001">
-   <input type="text" id="fi-text" value="0.001">
-   <br>
-   fc (fraction of planets that have civilizations that are capable of communicating):<br>
-   <input type="range" id="fc-range" min="0" max="1" step="0.01" value="0.0001">
-   <input type="text" id="fc-text" value="0.0001">
-   <br>
-   L (years that civilizations are able to communicate):<br>
-   <input type="range" id="L-range" min="1" max="10000" value="1000">
-   <input type="text" id="L-text" value="1000">
-   <br><br>
-   <div class="text-center">
-  <input type="button" class="btn btn-primary mr-2" id="submit" value="Submit">
-  <input type="button" class="btn btn-secondary" id="reset" value="Reset">
-</div>
-<script>
-    var defaultR = 10;
-    var defaultfp = 0.1;
-    var defaultne = 0.2;
-    var defaultfl = 0.01;
-    var defaultfi = 0.001;
-    var defaultfc = 0.0001;
-    var defaultL = 1000;
-
-    document.getElementById("R-text").addEventListener("input", function(){
-    document.getElementById("R-range").value = this.value;
-});
-   document.getElementById("R-range").addEventListener("input", function(){
-   document.getElementById("R-text").value = this.value;
-});
-
-   document.getElementById("fp-text").addEventListener("input", function(){
-   document.getElementById("fp-range").value = this.value;
-});
-   document.getElementById("fp-range").addEventListener("input", function(){
-   document.getElementById("fp-text").value = this.value;
-});
-    //same for ne, fl, fi, fc and L
-
-    document.getElementById("reset").addEventListener("click", function() {
-    // Reset input values
-    document.getElementById("R-text").value = defaultR;
-    document.getElementById("fp-text").value = defaultfp;
-    document.getElementById("ne-text").value = defaultne;
-    document.getElementById("fl-text").value = defaultfl;
-    document.getElementById("fi-text").value = defaultfi;
-    document.getElementById("fc-text").value = defaultfc;
-    document.getElementById("L-text").value = defaultL;
-    document.getElementById("R-range").value = defaultR;
-    document.getElementById("fp-range").value = defaultfp;
-    document.getElementById("ne-range").value = defaultne;
-    document.getElementById("fl-range").value = defaultfl;
-    document.getElementById("fi-range").value = defaultfi;
-    document.getElementById("fc-range").value = defaultfc;
-    document.getElementById("L-range").value = defaultL;
-    // Reset result
-    var resultHeading = document.getElementById("result");
-        resultHeading.textContent = "Equation Reset";
-    ;
-});
-</script>
-  </form> 
-  <br>
-  <h3> Estimated Number of Civilizations in the Milky Way </h3>
-  <h2><div id="result"></div></h2>
-</body>
+   <div style="display: grid; place-items: center;">
+   <title> Drake Equation Calculator </title>
+   <h2> Drake Equation Calculator </h2>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+           
+           $("#submit").click(function(){
+             var R = $("#R-range").val();
+             var fp = $("#fp-range").val();
+             var ne = $("#ne-range").val();
+             var fl = $("#fl-range").val();
+             var fi = $("#fi-range").val();
+             var fc = $("#fc-range").val();
+             var L = $("#L-range").val();
+         
+             // Drake equation calculation
+             var N = R * fp * ne * fl * fi * fc * L;
+             $("#result").html(N);
+           });
+           
+           $("input[type='range']").on("input", function(){
+               $(this).next().val($(this).val());
+           });
+           
+           $("input[type='text']").on("input", function(){
+               $(this).prev().val($(this).val());
+           });
+         });
+      </script>
+   </head>
+   <body>
+      <form>
+         R (rate of star formation in our galaxy):<br>
+         <input type="range" id="R-range" min="1" max="20" value="10">
+         <input type="text" id="R-text" value="10">
+         <br>
+         fp (fraction of stars that have planets):<br>
+         <input type="range" id="fp-range" min="0" max="1" step="0.01" value="0.1">
+         <input type="text" id="fp-text" value="0.1">
+         <br>
+         ne (fraction of planets that are in the habitable zone):<br>
+         <input type="range" id="ne-range" min="0" max="1" step="0.01" value="0.2">
+         <input type="text" id="ne-text" value="0.2">
+         <br>
+         fl (fraction of planets that develop life):<br>
+         <input type="range" id="fl-range" min="0" max="1" step="0.01" value="0.01">
+         <input type="text" id="fl-text" value="0.01">
+         <br>
+         fi (fraction of planets that develop intelligent life):<br>
+         <input type="range" id="fi-range" min="0" max="1" step="0.01" value="0.001">
+         <input type="text" id="fi-text" value="0.001">
+         <br>
+         fc (fraction of planets that have civilizations that are capable of communicating):<br>
+         <input type="range" id="fc-range" min="0" max="1" step="0.01" value="0.0001">
+         <input type="text" id="fc-text" value="0.0001">
+         <br>
+         L (years that civilizations are able to communicate):<br>
+         <input type="range" id="L-range" min="1" max="10000" value="1000">
+         <input type="text" id="L-text" value="1000">
+         <br><br>
+         <div class="text-center">
+            <input type="button" class="btn btn-primary mr-2" id="submit" value="Submit">
+            <input type="button" class="btn btn-secondary" id="reset" value="Reset">
+         </div>
+         <script>
+            var defaultR = 10;
+            var defaultfp = 0.1;
+            var defaultne = 0.2;
+            var defaultfl = 0.01;
+            var defaultfi = 0.001;
+            var defaultfc = 0.0001;
+            var defaultL = 1000;
+            
+            document.getElementById("R-text").addEventListener("input", function(){
+            document.getElementById("R-range").value = this.value;
+            });
+            document.getElementById("R-range").addEventListener("input", function(){
+            document.getElementById("R-text").value = this.value;
+            });
+            
+            document.getElementById("fp-text").addEventListener("input", function(){
+            document.getElementById("fp-range").value = this.value;
+            });
+            document.getElementById("fp-range").addEventListener("input", function(){
+            document.getElementById("fp-text").value = this.value;
+            });
+            //same for ne, fl, fi, fc and L
+            
+            document.getElementById("reset").addEventListener("click", function() {
+            // Reset input values
+            document.getElementById("R-text").value = defaultR;
+            document.getElementById("fp-text").value = defaultfp;
+            document.getElementById("ne-text").value = defaultne;
+            document.getElementById("fl-text").value = defaultfl;
+            document.getElementById("fi-text").value = defaultfi;
+            document.getElementById("fc-text").value = defaultfc;
+            document.getElementById("L-text").value = defaultL;
+            document.getElementById("R-range").value = defaultR;
+            document.getElementById("fp-range").value = defaultfp;
+            document.getElementById("ne-range").value = defaultne;
+            document.getElementById("fl-range").value = defaultfl;
+            document.getElementById("fi-range").value = defaultfi;
+            document.getElementById("fc-range").value = defaultfc;
+            document.getElementById("L-range").value = defaultL;
+            // Reset result
+            var resultHeading = document.getElementById("result");
+                resultHeading.textContent = "Equation Reset";
+            ;
+            });
+         </script>
+      </form>
+      <br>
+      <h3> Estimated Number of Civilizations in the Milky Way </h3>
+      <h2>
+         <div id="result"></div>
+      </h2>
+   </body>
 </html>
