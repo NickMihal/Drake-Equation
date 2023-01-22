@@ -67,18 +67,26 @@
   <input type="button" class="btn btn-secondary" id="reset" value="Reset">
 </div>
 <script>
+    var defaultR = 10;
+    var defaultfp = 0.1;
+    var defaultne = 0.2;
+    var defaultfl = 0.01;
+    var defaultfi = 0.001;
+    var defaultfc = 0.0001;
+    var defaultL = 1000;
+
     document.getElementById("reset").addEventListener("click", function() {
         // Reset input values
-        document.getElementById("R").value = 10;
-        document.getElementById("fp").value = 0.1;
-        document.getElementById("ne").value = 0.2;
-        document.getElementById("fl").value = 0.01;
-        document.getElementById("fi").value = 0.001;
-        document.getElementById("fc").value = 0.0001;
-        document.getElementById("L").value = 1000;
+        document.getElementById("R").value = defaultR;
+        document.getElementById("fp").value = defaultfp;
+        document.getElementById("ne").value = defaultne;
+        document.getElementById("fl").value = defaultfl;
+        document.getElementById("fi").value = defaultfi;
+        document.getElementById("fc").value = defaultfc;
+        document.getElementById("L").value = defaultL;
         // Reset result
         var resultHeading = document.getElementById("result");
-        ;
+        resultHeading.textContent = "Equation reset";
     });
 </script>
   </form> 
