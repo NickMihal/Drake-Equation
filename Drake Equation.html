@@ -62,7 +62,25 @@
     <input type="range" id="L" min="1" max="10000" value="1000">
     <input type="text" id="L" value="1000">
     <br><br>
-    <input type="button" id="submit" value="Submit">
+    <div class="text-center">
+  <input type="button" class="btn btn-primary mr-2" id="submit" value="Submit">
+  <input type="button" class="btn btn-secondary" id="reset" value="Reset">
+</div>
+<script>
+    document.getElementById("reset").addEventListener("click", function() {
+        // Reset input values
+        document.getElementById("R").value = 10;
+        document.getElementById("fp").value = 0.1;
+        document.getElementById("ne").value = 0.2;
+        document.getElementById("fl").value = 0.01;
+        document.getElementById("fi").value = 0.001;
+        document.getElementById("fc").value = 0.0001;
+        document.getElementById("L").value = 1000;
+        // Reset result
+        var resultHeading = document.getElementById("result-heading");
+        resultHeading.textContent = "Estimated Number of Civilizations in the Milky Way: ";
+    });
+</script>
   </form> 
   <br>
   <h3> Estimated Number of Civilizations in the Milky Way </h3>
