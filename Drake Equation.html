@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
     <h2> Drake Equation Calculator </h2>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#submit").click(function(){
+        var R = $("#R").val();
+        var fp = $("#fp").val();
+        var ne = $("#ne").val();
+        var fl = $("#fl").val();
+        var fi = $("#fi").val();
+        var fc = $("#fc").val();
+        var L = $("#L").val();
+
+        // Drake equation calculation
+        var N = R * fp * ne * fl * fi * fc * L;
+        $("#result").html(N);
+      });
+    });
+  </script>
+</head>
 <body>
-
-<form>
-  R (rate of star formation in our galaxy):<br>
-  <input type="text" name="R" value="10">
+  <form>
+    R (rate of star formation in our galaxy):<br>
+    <input type="text" id="R" value="10">
+    <br>
+    fp (fraction of stars that have planets):<br>
+    <input type="text" id="fp" value="0.1">
+    <br>
+    ne (fraction of planets that are in the habitable zone):<br>
+    <input type="text" id="ne" value="0.2">
+    <br>
+    fl (fraction of planets that develop life):<br>
+    <input type="text" id="fl" value="0.01">
+    <br>
+    fi (fraction of planets that develop intelligent life):<br>
+    <input type="text" id="fi" value="0.001">
+    <br>
+    fc (fraction of planets that have civilizations that are capable of communicating):<br>
+    <input type="text" id="fc" value="0.0001">
+    <br>
+    L (years that civilizations are able to communicate):<br>
+    <input type="text" id="L" value="1000">
+    <br><br>
+    <input type="button" id="submit" value="Submit">
+  </form> 
   <br>
-  fp (fraction of stars that have planets):<br>
-  <input type="text" name="fp" value="0.1">
-  <br>
-  ne (fraction of planets that are in the habitable zone):<br>
-  <input type="text" name="ne" value="0.2">
-  <br>
-  fl (fraction of planets that develop life):<br>
-  <input type="text" name="fl" value="0.01">
-  <br>
-  fi (fraction of planets that develop intelligent life):<br>
-  <input type="text" name="fi" value="0.001">
-  <br>
-  fc (fraction of planets that have civilizations that are capable of communicating):<br>
-  <input type="text" name="fc" value="0.0001">
-  <br>
-  L (years that civilizations are able to communicate):<br>
-  <input type="text" name="L" value="1000">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-
+  <div id="result"></div>
 </body>
 </html>
