@@ -10,17 +10,41 @@
          function getRandomNumber(min, max) {
          return Math.random() * (max - min) + min;
          }
+         
          $("#random").click(function(){
-         $("#R-range").val(getRandomNumber(1, 20));
-         $("#fp-range").val(getRandomNumber(0, 1));
-         $("#ne-range").val(getRandomNumber(0, 1));
-         $("#fl-range").val(getRandomNumber(0, 1));
-         $("#fi-range").val(getRandomNumber(0, 1));
-         $("#fc-range").val(getRandomNumber(0, 1));
-         $("#L-range").val(getRandomNumber(1, 10000));
-           });
-
-           $("#submit").click(function(){
+         var inputFields = ["R-text", "fp-text", "ne-text", "fl-text", "fi-text", "fc-text", "L-text"];
+         for (var i = 0; i < inputFields.length; i++) {
+         var inputId = inputFields[i];
+         var randomNumber;
+         switch(inputId) {
+        case "R-text":
+            randomNumber = getRandomNumber(1, 20);
+            break;
+        case "fp-text":
+            randomNumber = getRandomNumber(0, 1);
+            break;
+        case "ne-text":
+            randomNumber = getRandomNumber(0, 1);
+            break;
+        case "fl-text":
+            randomNumber = getRandomNumber(0, 1);
+            break;
+        case "fi-text":
+            randomNumber = getRandomNumber(0, 1);
+            break;
+        case "fc-text":
+            randomNumber = getRandomNumber(0, 1);
+            break;
+        case "L-text":
+            randomNumber = getRandomNumber(1, 10000);
+            break;
+       }
+        $("#" + inputId).val(randomNumber);
+        $("#" + inputId).prev().val(randomNumber);
+      }
+     });
+           
+             $("#submit").click(function(){
              var R = $("#R-range").val();
              var fp = $("#fp-range").val();
              var ne = $("#ne-range").val();
