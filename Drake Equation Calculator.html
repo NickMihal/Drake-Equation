@@ -11,6 +11,10 @@
          return Math.random() * (max - min) + min;
          }
          
+         $("#info-button").click(function(){
+         $("#info-box").toggle();
+         });
+
          $("#random").click(function(){
          var inputFields = ["R-text", "fp-text", "ne-text", "fl-text", "fi-text", "fc-text", "L-text"];
          for (var i = 0; i < inputFields.length; i++) {
@@ -158,5 +162,14 @@
       </form>
       <h3> Estimated Number of Civilizations in the Milky Way </h3>
       <h2> <div id="result"></div> </h2>
+      <br>
+      <br>
+      <br>
+      <button id="info-button">What is the Drake equation?</button>
+      <div id="info-box" style="display: none;">
+        <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
+            The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.</p>
+        <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, the fraction of planets that are in the habitable zone, the fraction of planets that develop life, the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.</p>
+    </div>    
    </body>
 </html>
