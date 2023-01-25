@@ -14,7 +14,7 @@ The equation was first proposed by astrophysicist Frank Drake in 1961 as a way t
 
 <h3> The Drake equation formula </h3>
 
-<h2> N = R ∗ fp ∗ ne ∗ fl ∗ fi ∗ fc ∗ L </h2>
+<h2> N = R ⋅ fp ⋅ ne ⋅ fl ⋅ fi ⋅ fc ⋅ L </h2>
 <br>
 
 <h3> The Drake equation formula explained </h3>
