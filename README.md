@@ -11,12 +11,12 @@ There is also an app for Android : [Drake Equation Calculator Android App](https
 The Drake equation is a probabilistic argument used to estimate the number of active, <br>
 communicative extraterrestrial civilizations in the Milky Way Galaxy
 
-
-<h3> The Drake equation formula </h3> <br>
-
-<h3> N = R ∗ fp ∗ ne ∗ fl ∗ fi ∗ fc ∗ L </h3>
 <br>
 
+<h3> The Drake equation formula </h3>
+
+<h2> N = R ∗ fp ∗ ne ∗ fl ∗ fi ∗ fc ∗ L </h2>
+<br>
 
 <h3> The Drake equation formula explained </h3>
 
