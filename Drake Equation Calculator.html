@@ -4,10 +4,10 @@
    <title> Drake Equation Calculator </title>
    <h2> Drake Equation Calculator </h2>
    <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="Script/Script.js"></script>
-    <link rel="stylesheet" type="text/css" href="Styles/styles.css">
- </head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="Script/Script.js"></script>
+      <link rel="stylesheet" type="text/css" href="Styles/styles.css">
+   </head>
    <body>
       <form>
          R (rate of star formation in our galaxy):<br>
@@ -45,19 +45,64 @@
             <label for="decimalSwitch">Decimal Numbers</label>
             <input type="checkbox" id="decimalSwitch">
          </div>
+         <script>
+            var defaultR = 10;
+            var defaultfp = 0.1;
+            var defaultne = 0.2;
+            var defaultfl = 0.01;
+            var defaultfi = 0.001;
+            var defaultfc = 0.0001;
+            var defaultL = 1000;
+            
+            document.getElementById("R-text").addEventListener("input", function(){
+            document.getElementById("R-range").value = this.value;
+            });
+            
+            document.getElementById("fp-range").addEventListener("input", function(){
+            document.getElementById("fp-text").value = this.value;
+            });
+            //same for ne, fl, fi, fc and L
+            
+            document.getElementById("reset").addEventListener("click", function() {
+            // Reset input values
+            document.getElementById("R-text").value = defaultR;
+            document.getElementById("fp-text").value = defaultfp;
+            document.getElementById("ne-text").value = defaultne;
+            document.getElementById("fl-text").value = defaultfl;
+            document.getElementById("fi-text").value = defaultfi;
+            document.getElementById("fc-text").value = defaultfc;
+            document.getElementById("L-text").value = defaultL;
+            document.getElementById("R-range").value = defaultR;
+            document.getElementById("fp-range").value = defaultfp;
+            document.getElementById("ne-range").value = defaultne;
+            document.getElementById("fl-range").value = defaultfl;
+            document.getElementById("fi-range").value = defaultfi;
+            document.getElementById("fc-range").value = defaultfc;
+            document.getElementById("L-range").value = defaultL;
+            // Reset result
+            var resultHeading = document.getElementById("result");
+                resultHeading.textContent = "Equation Reset";
+            ;
+            });
+                 
+         </script>
       </form>
       <h3> Estimated Number of Civilizations in the Milky Way </h3>
-      <h2> <div id="result"></div> </h2>
+      <h2>
+         <div id="result"></div>
+      </h2>
       <br>
       <button id="info-button">What is the Drake equation?</button> 
       <div id="info-box" style="display: none;">
-        <div style="display: grid; place-items: center;">
-        <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
-            The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.</p>
-        <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, <br>
-            the fraction of planets that are in the habitable zone, the fraction of planets that develop life, <br>
-            the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.</p>
-     </div>
-    </div>    
+         <div style="display: grid; place-items: center;">
+            <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
+               The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.
+            </p>
+            <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, <br>
+               the fraction of planets that are in the habitable zone, the fraction of planets that develop life, <br>
+               the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.
+            </p>
+         </div>
+      </div>
    </body>
 </html>
