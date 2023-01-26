@@ -67,8 +67,7 @@ $(document).ready(function(){
     $(this).prev().val($(this).val());
     });
     });
-
-    
+ 
     document.getElementById("random").addEventListener("click", function() {
     // Assign random values to the text boxes
     document.getElementById("R-range").value = getRandomNumber(1,20);
@@ -80,5 +79,3 @@ $(document).ready(function(){
     document.getElementById("L-range").value = getRandomNumber(1,10000);
     });
 
-
-   
