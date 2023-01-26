@@ -78,3 +78,5 @@ $(document).ready(function(){
     document.getElementById("fc-range").value = getRandomNumber(0,1);
     document.getElementById("L-range").value = getRandomNumber(1,10000);
     });
+
+    
