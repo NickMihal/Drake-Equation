@@ -116,6 +116,13 @@ $(document).ready(function(){
     });
     });
     function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-     }
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
+    document.querySelectorAll('.btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+    var collapseId = this.getAttribute('data-target');
+    var collapseEl = document.querySelector(collapseId);
+    collapseEl.classList.toggle('show');
+    });
+    });
