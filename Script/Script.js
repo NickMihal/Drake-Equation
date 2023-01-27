@@ -68,6 +68,8 @@ $(document).ready(function(){
     });
     });
  
+    document.getElementById("decimalSwitch").checked = true;
+
     document.getElementById("random").addEventListener("click", function() {
     // Assign random values to the text boxes
     document.getElementById("R-range").value = getRandomNumber(1,20);
