@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <div style="display: grid; place-items: center;">
-   <title> Drake Equation Calculator </title>
+   <title> Drake Equation Calculator </title> 
    <h2> Drake Equation Calculator </h2>
    <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -37,7 +37,8 @@
          L (years that civilizations are able to communicate):<br>
          <input type="range" id="L-range" min="1" max="10000" value="1000">
          <input type="text" id="L-text" value="1000">
-         <br><br>
+      </form>
+      &nbsp;
          <div class="text-center">
             <input type="button" class="btn btn-primary mr-2" id="submit" value="Submit">
             <input type="button" class="btn btn-secondary" id="reset" value="Reset">
@@ -45,7 +46,7 @@
             <label for="decimalSwitch">Decimal Numbers</label>
             <input type="checkbox" id="decimalSwitch">
          </div>
-         <script>
+      <script>
             var defaultR = 10;
             var defaultfp = 0.1;
             var defaultne = 0.2;
@@ -85,13 +86,13 @@
             ;
             });
                  
-         </script>
-      </form>
+      </script>
+      &nbsp;
       <h3> Estimated Number of Civilizations in the Milky Way </h3>
       <h2>
          <div id="result"></div>
       </h2>
-      <br>
+      &nbsp;
       <button id="info-button">What is the Drake equation?</button> 
       <div id="info-box" style="display: none;">
          <div style="display: grid; place-items: center;">
