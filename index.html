@@ -1,90 +1,12 @@
 <!DOCTYPE html>
 <html>
    <div style="display: grid; place-items: center;">
-   <title> Drake Equation Calculator </title>
+   <title> Drake Equation Calculator </title> 
    <h2> Drake Equation Calculator </h2>
    <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script>
-         $(document).ready(function(){
-         function getRandomNumber(min, max) {
-         return Math.random() * (max - min) + min;
-         }
-                
-         $("#info-button").click(function(){
-         $("#info-box").toggle();
-         });
-
-         $("#random").click(function(){
-         var inputFields = ["R-text", "fp-text", "ne-text", "fl-text", "fi-text", "fc-text", "L-text"];
-         for (var i = 0; i < inputFields.length; i++) {
-         var inputId = inputFields[i];
-         var randomNumber;
-         switch(inputId) {
-        case "R-text":
-            randomNumber = getRandomNumber(1, 20);
-            break;
-        case "fp-text":
-            randomNumber = getRandomNumber(0, 1);
-            break;
-        case "ne-text":
-            randomNumber = getRandomNumber(0, 1);
-            break;
-        case "fl-text":
-            randomNumber = getRandomNumber(0, 1);
-            break;
-        case "fi-text":
-            randomNumber = getRandomNumber(0, 1);
-            break;
-        case "fc-text":
-            randomNumber = getRandomNumber(0, 1);
-            break;
-        case "L-text":
-            randomNumber = getRandomNumber(1, 10000);
-            break;
-       }
-        $("#" + inputId).val(randomNumber);
-        $("#" + inputId).prev().val(randomNumber);
-        $("#submit").click();
-
-        function getRandomNumber(min, max) {
-            if (document.getElementById("decimalSwitch").checked) {
-        return (Math.random() * (max - min) + min).toFixed(2);
-    } else {
-        return (Math.random() * (max - min) + min);
-    }
-}
-
-      }
-     });
-
-             $("#submit").click(function(){
-             var R = $("#R-range").val();
-             var fp = $("#fp-range").val();
-             var ne = $("#ne-range").val();
-             var fl = $("#fl-range").val();
-             var fi = $("#fi-range").val();
-             var fc = $("#fc-range").val();
-             var L = $("#L-range").val();
-         
-             // Drake equation calculation
-             var N = R * fp * ne * fl * fi * fc * L;
-             if(document.getElementById("decimalSwitch").checked) {
-             N = N.toFixed(2);
-             }
-             $("#result").html(N);
-
-           });
-           
-           $("input[type='range']").on("input", function(){
-               $(this).next().val($(this).val());
-           });
-           
-           $("input[type='text']").on("input", function(){
-               $(this).prev().val($(this).val());
-           });
-         });        
-       </script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <link rel="stylesheet" href="Styles/Styles.css">
    </head>
    <body>
       <form>
@@ -115,16 +37,16 @@
          L (years that civilizations are able to communicate):<br>
          <input type="range" id="L-range" min="1" max="10000" value="1000">
          <input type="text" id="L-text" value="1000">
-         <br><br>
+      </form>
+      &nbsp;
          <div class="text-center">
             <input type="button" class="btn btn-primary mr-2" id="submit" value="Submit">
             <input type="button" class="btn btn-secondary" id="reset" value="Reset">
             <input type="button" class="btn btn-secondary" id="random" value="Random">
             <label for="decimalSwitch">Decimal Numbers</label>
             <input type="checkbox" id="decimalSwitch">
-
          </div>
-         <script>
+      <script>
             var defaultR = 10;
             var defaultfp = 0.1;
             var defaultne = 0.2;
@@ -163,34 +85,26 @@
                 resultHeading.textContent = "Equation Reset";
             ;
             });
-         </script>
-         <script>
-            document.getElementById("random").addEventListener("click", function() {
-            // Assign random values to the text boxes
-            document.getElementById("R-range").value = getRandomNumber(1,20);
-            document.getElementById("fp-range").value = getRandomNumber(0,1);
-            document.getElementById("ne-range").value = getRandomNumber(0,1);
-            document.getElementById("fl-range").value = getRandomNumber(0,1);
-            document.getElementById("fi-range").value = getRandomNumber(0,1);
-            document.getElementById("fc-range").value = getRandomNumber(0,1);
-            document.getElementById("L-range").value = getRandomNumber(1,10000);
-           });
-         </script>
-      </form>
+                 
+      </script>
+      &nbsp;
       <h3> Estimated Number of Civilizations in the Milky Way </h3>
-      <h2> <div id="result"></div> </h2>
-      <br>
-      <br>
-      <br>
-      <button id="info-button">What is the Drake equation?</button>
+      <h2>
+         <div id="result"></div>
+      </h2>
+      &nbsp;
+      <button id="info-button">What is the Drake equation?</button> 
       <div id="info-box" style="display: none;">
-        <div style="display: grid; place-items: center;">
-        <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
-            The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.</p>
-        <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, <br>
-            the fraction of planets that are in the habitable zone, the fraction of planets that develop life, <br>
-            the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.</p>
-     </div>
-    </div>    
+         <div style="display: grid; place-items: center;">
+            <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
+               The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.
+            </p>
+            <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, <br>
+               the fraction of planets that are in the habitable zone, the fraction of planets that develop life, <br>
+               the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.
+            </p>
+         </div>
+      </div>
+      <script src="Script/Script.js"></script>
    </body>
 </html>
