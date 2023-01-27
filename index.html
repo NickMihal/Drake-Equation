@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html>
    <div style="display: grid; place-items: center;">
-   <title> Drake Equation Calculator </title> 
-   <h2> Drake Equation Calculator </h2>
-   <head>   
-      <meta name="description" content="Drake Equation Calculator">
-      <meta name="author" content="NickMihal">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-      <link rel="stylesheet" href="Styles/Styles.css">
-   </head>
-   <body>
-      <form>
-         R (rate of star formation in our galaxy):<br>
-         <input type="range" id="R-range" min="1" max="20" value="10">
-         <input type="text" id="R-text" value="10">
-         <br>
-         fp (fraction of stars that have planets):<br>
-         <input type="range" id="fp-range" min="0" max="1" step="0.01" value="0.1">
-         <input type="text" id="fp-text" value="0.1">
-         <br>
-         ne (fraction of planets that are in the habitable zone):<br>
-         <input type="range" id="ne-range" min="0" max="1" step="0.01" value="0.2">
-         <input type="text" id="ne-text" value="0.2">
-         <br>
-         fl (fraction of planets that develop life):<br>
-         <input type="range" id="fl-range" min="0" max="1" step="0.01" value="0.01">
-         <input type="text" id="fl-text" value="0.01">
-         <br>
-         fi (fraction of planets that develop intelligent life):<br>
-         <input type="range" id="fi-range" min="0" max="1" step="0.01" value="0.001">
-         <input type="text" id="fi-text" value="0.001">
-         <br>
-         fc (fraction of planets that have civilizations that are capable of communicating):<br>
-         <input type="range" id="fc-range" min="0" max="1" step="0.01" value="0.0001">
-         <input type="text" id="fc-text" value="0.0001">
-         <br>
-         L (years that civilizations are able to communicate):<br>
-         <input type="range" id="L-range" min="1" max="10000" value="1000">
-         <input type="text" id="L-text" value="1000">
-      </form>
-      &nbsp;
+      <title> Drake Equation Calculator </title>
+      <h2> Drake Equation Calculator </h2>
+      <head>
+         <meta name="description" content="Drake Equation Calculator">
+         <meta name="author" content="NickMihal">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+         <link rel="stylesheet" href="Styles/Styles.css">
+      </head>
+      <body>
+         <form>
+            R (rate of star formation in our galaxy):<br>
+            <input type="range" id="R-range" min="1" max="20" value="10">
+            <input type="text" id="R-text" value="10">
+            <br>
+            fp (fraction of stars that have planets):<br>
+            <input type="range" id="fp-range" min="0" max="1" step="0.01" value="0.1">
+            <input type="text" id="fp-text" value="0.1">
+            <br>
+            ne (fraction of planets that are in the habitable zone):<br>
+            <input type="range" id="ne-range" min="0" max="1" step="0.01" value="0.2">
+            <input type="text" id="ne-text" value="0.2">
+            <br>
+            fl (fraction of planets that develop life):<br>
+            <input type="range" id="fl-range" min="0" max="1" step="0.01" value="0.01">
+            <input type="text" id="fl-text" value="0.01">
+            <br>
+            fi (fraction of planets that develop intelligent life):<br>
+            <input type="range" id="fi-range" min="0" max="1" step="0.01" value="0.001">
+            <input type="text" id="fi-text" value="0.001">
+            <br>
+            fc (fraction of planets that have civilizations that are capable of communicating):<br>
+            <input type="range" id="fc-range" min="0" max="1" step="0.01" value="0.0001">
+            <input type="text" id="fc-text" value="0.0001">
+            <br>
+            L (years that civilizations are able to communicate):<br>
+            <input type="range" id="L-range" min="1" max="10000" value="1000">
+            <input type="text" id="L-text" value="1000">
+         </form>
+         &nbsp;
          <div class="text-center">
             <input type="button" class="btn btn-primary" id="submit" value="Submit">
             <input type="button" class="btn btn-secondary" id="reset" value="Reset">
@@ -49,26 +50,56 @@
             <label for="decimalSwitch">Decimal Numbers</label>
             <input type="checkbox" id="decimalSwitch">
          </div>
-      &nbsp;
-      <h3> Estimated Number of Civilizations in the Milky Way </h3>
-      <h2>
-         <div id="result"></div>
-      </h2>
-      &nbsp;
-      <button type="button" class="btn btn-secondary" id="info-button">What is the Drake equation?</button> 
-      <div id="info-box" style="display: none;">
-         <div style="display: grid; place-items: center;">
-            <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
-               The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.
-            </p>
-            <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, <br>
-               the fraction of planets that are in the habitable zone, the fraction of planets that develop life, <br>
-               the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.
-            </p>
+         &nbsp;
+         <h3> Estimated Number of Civilizations in the Milky Way </h3>
+         <h2>
+            <div id="result"></div>
+         </h2>
+         &nbsp;
+         <div class="d-flex justify-content-between">
+            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+            What is the Drake equation?
+            </button>
+            <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            How does the formula works?
+            </button>
          </div>
-      </div>
-      <script src="Script/Script.js"></script>
-   </body>
-    &nbsp;
-   <button onclick="myFunction()" class="btn btn-secondary">Dark mode / Light Mode</button>
+         <div class="collapse" id="collapse1">
+            <div class="card card-body" style="display: grid; place-items: center;">
+               <p>The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
+                  The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life.
+               </p>
+               <p>It takes into account factors such as the rate of star formation, the fraction of stars with planets, <br>
+                  the fraction of planets that are in the habitable zone, the fraction of planets that develop life, <br>
+                  the fraction of planets that develop intelligent life, and the length of time that civilizations are able to communicate.
+               </p>
+            </div>
+         </div>
+         <div class="collapse" id="collapse2">
+            <div class="card card-body">
+               <p>
+                  The formula is: <br>
+                  N = R ⋅ fp ⋅ ne ⋅ fl ⋅ fi ⋅ fc ⋅ L <br>
+                  <br>
+                  Where: <br>
+                  N = the number of extraterrestrial civilizations in our galaxy with which communication might be possible <br>
+                  R = the average rate of star formation in our galaxy <br>
+                  fp = the fraction of those stars that have planets <br>
+                  ne = the number of planets per star that are in the "habitable zone" (where conditions are right for liquid water to exist) <br>
+                  fl = the fraction of those planets on which life develops <br>
+                  fi = the fraction of those planets on which intelligent life develops <br>
+                  fc = the fraction of civilizations that develop a technology that releases detectable signs of their existence into space <br>
+                  L = the length of time such civilizations release detectable signals into space <br>
+                  <br>
+                  The formula is not meant to be taken as a precise prediction, but rather as a way to organize our thinking about the factors <br>
+                  that could influence the likelihood of extraterrestrial life, and to help guide scientific observations. <br>
+                  The values for the various factors in the equation are uncertain and subject to ongoing research and debate.
+               </p>
+            </div>
+         </div>
+         <script src="Script/Script.js"></script>
+      </body>
+      &nbsp;
+      <button onclick="myFunction()" class="btn btn-secondary">Dark mode / Light Mode</button>
+   </div>
 </html>
