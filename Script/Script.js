@@ -67,9 +67,7 @@ $(document).ready(function(){
     $(this).prev().val($(this).val());
     });
     });
- 
     document.getElementById("decimalSwitch").checked = true;
-
     document.getElementById("random").addEventListener("click", function() {
     // Assign random values to the text boxes
     document.getElementById("R-range").value = getRandomNumber(1,20);
@@ -80,3 +78,41 @@ $(document).ready(function(){
     document.getElementById("fc-range").value = getRandomNumber(0,1);
     document.getElementById("L-range").value = getRandomNumber(1,10000);
     });
+    $(function(){
+    var defaultR = 10;
+    var defaultfp = 0.1;
+    var defaultne = 0.2;
+    var defaultfl = 0.01;
+    var defaultfi = 0.001;
+    var defaultfc = 0.0001;
+    var defaultL = 1000;
+    document.getElementById("R-text").addEventListener("input", function(){
+    document.getElementById("R-range").value = this.value;
+    });
+    document.getElementById("fp-range").addEventListener("input", function(){
+    document.getElementById("fp-text").value = this.value;
+    });
+    //same for ne, fl, fi, fc and L
+    document.getElementById("reset").addEventListener("click", function() {
+    // Reset input values
+    document.getElementById("R-text").value = defaultR;
+    document.getElementById("fp-text").value = defaultfp;
+    document.getElementById("ne-text").value = defaultne;
+    document.getElementById("fl-text").value = defaultfl;
+    document.getElementById("fi-text").value = defaultfi;
+    document.getElementById("fc-text").value = defaultfc;
+    document.getElementById("L-text").value = defaultL;
+    document.getElementById("R-range").value = defaultR;
+    document.getElementById("fp-range").value = defaultfp;
+    document.getElementById("ne-range").value = defaultne;
+    document.getElementById("fl-range").value = defaultfl;
+    document.getElementById("fi-range").value = defaultfi;
+    document.getElementById("fc-range").value = defaultfc;
+    document.getElementById("L-range").value = defaultL;
+    // Reset result
+    var resultHeading = document.getElementById("result");
+    resultHeading.textContent = "Equation Reset";
+    ;
+    });
+    });
+    
