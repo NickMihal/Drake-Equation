@@ -126,4 +126,9 @@ $(document).ready(function(){
     collapseEl.classList.toggle('show');
     });
     });
-    
+    function closeCollapse(id) {
+        var collapse = document.getElementById(id);
+        if (collapse.classList.contains("show")) {
+          collapse.classList.remove("show");
+        }
+      }
