@@ -14,10 +14,10 @@ body {
 }
 
 input[type="range"] {
-  height:13px;
-  width:250px;
+   height:13px;
+   width:250px;
 }
 
 input[type="text"] {
-  width:250px;
+   width:250px;
 }
