@@ -125,8 +125,15 @@ $(document).ready(function () {
     });
   });
   function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+    var body = document.getElementsByTagName("BODY")[0];
+    var currentClass = body.className;
+    if (currentClass === "dark-mode") {
+      body.className = "light-mode";
+      document.getElementsByTagName("button")[0].innerHTML = '<i class="fas fa-moon"></i><span class="d-none d-md-inline">&nbsp;Dark mode</span>';
+    } else {
+      body.className = "dark-mode";
+      document.getElementsByTagName("button")[0].innerHTML = '<i class="fas fa-sun"></i><span class="d-none d-md-inline">&nbsp;Light mode</span>';
+    }
   }
   document.querySelectorAll(".btn").forEach(function (btn) {
     btn.addEventListener("click", function () {
