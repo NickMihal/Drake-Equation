@@ -137,6 +137,9 @@ function myFunction() {
         '<i class="fas fa-sun"></i><span class="d-none d-md-inline">&nbsp;Light Mode</span>';
   }
 }
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+   document.body.classList.add('dark-mode');
+ }
 document.querySelectorAll(".btn").forEach(function (btn) {
   btn.addEventListener("click", function () {
      var collapseId = this.getAttribute("data-target");
