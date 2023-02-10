@@ -7,37 +7,37 @@ $(document).ready(function () {
   });
   $("#random").click(function () {
      var inputFields = [
-        "R-text",
-        "fp-text",
-        "ne-text",
-        "fl-text",
-        "fi-text",
-        "fc-text",
-        "L-text",
+        "R-number",
+        "fp-number",
+        "ne-number",
+        "fl-number",
+        "fi-number",
+        "fc-number",
+        "L-number",
      ];
      for (var i = 0; i < inputFields.length; i++) {
         var inputId = inputFields[i];
         var randomNumber;
         switch (inputId) {
-           case "R-text":
+           case "R-number":
               randomNumber = getRandomNumber(1, 20);
               break;
-           case "fp-text":
+           case "fp-number":
               randomNumber = getRandomNumber(0, 1);
               break;
-           case "ne-text":
+           case "ne-number":
               randomNumber = getRandomNumber(0, 1);
               break;
-           case "fl-text":
+           case "fl-number":
               randomNumber = getRandomNumber(0, 1);
               break;
-           case "fi-text":
+           case "fi-number":
               randomNumber = getRandomNumber(0, 1);
               break;
-           case "fc-text":
+           case "fc-number":
               randomNumber = getRandomNumber(0, 1);
               break;
-           case "L-text":
+           case "L-number":
               randomNumber = getRandomNumber(1, 10000);
               break;
         }
@@ -73,7 +73,7 @@ $(document).ready(function () {
   $("input[type='range']").on("input", function () {
      $(this).next().val($(this).val());
   });
-  $("input[type='text']").on("input", function () {
+  $("input[type='number']").on("input", function () {
      $(this).prev().val($(this).val());
   });
 });
@@ -96,22 +96,22 @@ $(function () {
   var defaultfi = 0.001;
   var defaultfc = 0.0001;
   var defaultL = 1000;
-  document.getElementById("R-text").addEventListener("input", function () {
+  document.getElementById("R-number").addEventListener("input", function () {
      document.getElementById("R-range").value = this.value;
   });
   document.getElementById("fp-range").addEventListener("input", function () {
-     document.getElementById("fp-text").value = this.value;
+     document.getElementById("fp-number").value = this.value;
   });
   //same for ne, fl, fi, fc and L
   document.getElementById("reset").addEventListener("click", function () {
      // Reset input values
-     document.getElementById("R-text").value = defaultR;
-     document.getElementById("fp-text").value = defaultfp;
-     document.getElementById("ne-text").value = defaultne;
-     document.getElementById("fl-text").value = defaultfl;
-     document.getElementById("fi-text").value = defaultfi;
-     document.getElementById("fc-text").value = defaultfc;
-     document.getElementById("L-text").value = defaultL;
+     document.getElementById("R-number").value = defaultR;
+     document.getElementById("fp-number").value = defaultfp;
+     document.getElementById("ne-number").value = defaultne;
+     document.getElementById("fl-number").value = defaultfl;
+     document.getElementById("fi-number").value = defaultfi;
+     document.getElementById("fc-number").value = defaultfc;
+     document.getElementById("L-number").value = defaultL;
      document.getElementById("R-range").value = defaultR;
      document.getElementById("fp-range").value = defaultfp;
      document.getElementById("ne-range").value = defaultne;

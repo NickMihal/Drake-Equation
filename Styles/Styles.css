@@ -6,7 +6,7 @@ input[type="range"] {
   height:13px;
   width:250px;
 }
-input[type="text"] {
+input[type="number"] {
   width:250px;
 }
 .dark-mode {
