@@ -10,7 +10,7 @@ input[type="range"] {
 input[type="number"] {
   height:35px;
   width:250px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 .dark-mode {
   background-color: black;
