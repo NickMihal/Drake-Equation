@@ -1,13 +1,16 @@
 body {
   background-color: white;
   color: black;
+  font-size: 17px;
 }
 input[type="range"] {
-  height:13px;
+  height:15px;
   width:250px;
 }
 input[type="number"] {
+  height:35px;
   width:250px;
+  border-radius: 10px;
 }
 .dark-mode {
   background-color: black;
