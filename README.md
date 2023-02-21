@@ -2,21 +2,21 @@
 
 <h2>
 
-There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) </h2>
+:iphone: There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) </h2>
 
 <br>
-<h2><p align="center"> What is the Drake equation? </p></h2>
+<h2><p align="center">:question: What is the Drake equation? :question:</p></h2>
 
 <p align="center"> The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
 The equation was first proposed by astrophysicist Frank Drake in 1961 as a way to organize the various factors that could influence the likelihood of the existence of extraterrestrial life. </p>
 
 <br>
-<h2><p align="center"> The Drake equation formula </p></h2>
+<h2><p align="center">:telescope: The Drake equation formula :telescope:</p></h2>
 
 <h2><p align="center"> N = R ⋅ fp ⋅ ne ⋅ fl ⋅ fi ⋅ fc ⋅ L </p></h2>
 <br>
 
-<h2><p align="center"> The Drake equation formula explained </p></h2>
+<h2><p align="center">:book: The Drake equation formula explained :book:</p></h2>
 
 <b>N</b> = the number of civilizations in the Milky Way galaxy with which communication might be possible <br>
 <b>R</b> = the average rate of star formation in our Galaxy <br>
