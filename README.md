@@ -8,6 +8,7 @@ There is also an app for Android : [Drake Equation Calculator Android App](https
 
 </h3>
 
+<br>
 <h3> What is the Drake equation? </h3>
 
 The Drake equation is a mathematical formula used to estimate the number of detectable extraterrestrial civilizations in our galaxy. <br>
