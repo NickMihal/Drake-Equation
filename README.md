@@ -2,11 +2,10 @@
 
 # [![Logo](https://user-images.githubusercontent.com/86963425/220344222-3c05930c-d7dd-4f80-8d00-271a9bbbad60.png)&nbsp;&nbsp;&nbsp;Drake Equation Calculator Website](https://nickmihal.github.io/Drake-Equation-Calculator-Web/)
 
-<h3>
-
+<h2>
+  
 There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/)
-
-</h3>
+</h2>
 
 <br>
 <h3> What is the Drake equation? </h3>
