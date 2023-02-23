@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Website status](https://img.shields.io/uptimerobot/status/m793785666-85863a9bb342801a83a7a610?label=website%20status&style=for-the-badge)](https://stats.uptimerobot.com/AbCdEfGhIj)
+[![Website status](https://img.shields.io/badge/website-online-brightgreen?style=for-the-badge&logo=WPExplorer)](https://stats.uptimerobot.com/AbCdEfGhIj)
 [![Website uptime](https://img.shields.io/uptimerobot/ratio/m793785666-85863a9bb342801a83a7a610?label=website%20uptime&style=for-the-badge)](https://stats.uptimerobot.com/AbCdEfGhIj)
 
 <div>
