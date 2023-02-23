@@ -1,5 +1,13 @@
 # [![Logo](https://user-images.githubusercontent.com/86963425/220344222-3c05930c-d7dd-4f80-8d00-271a9bbbad60.png)&nbsp;&nbsp;&nbsp;Drake Equation Calculator Website](https://nickmihal.github.io/Drake-Equation-Calculator-Web/)
 
+<div align="center">
+
+[![Website status](https://img.shields.io/uptimerobot/status/m793785666-85863a9bb342801a83a7a610?label=website%20status&style=for-the-badge)](https://stats.uptimerobot.com/AbCdEfGhIj)
+[![Website uptime](https://img.shields.io/uptimerobot/ratio/m793785666-85863a9bb342801a83a7a610?label=website%20uptime&style=for-the-badge)](https://stats.uptimerobot.com/AbCdEfGhIj)
+
+<div>
+
+
 <h3>
 
 :iphone: There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) </h3>
