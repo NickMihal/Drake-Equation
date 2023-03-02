@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Website status](https://img.shields.io/uptimerobot/status/m793785666-85863a9bb342801a83a7a610?label=website%20status&style=for-the-badge&logo=WPExplorer&custom_uptime_ratio=100)](https://nickmihal.github.io/Drake-Equation-Calculator-Web/) 
+[![Website status](https://img.shields.io/uptimerobot/status/m793785666-85863a9bb342801a83a7a610?label=website%20status&style=for-the-badge&logo=WPExplorer&custom_uptime_ratio=100)](https://stats.uptimerobot.com/Jxv32sBDoP) 
 [![Website uptime](https://img.shields.io/uptimerobot/ratio/m793785666-85863a9bb342801a83a7a610?label=website%20uptime&style=for-the-badge&logo=WPExplorer)](https://stats.uptimerobot.com/Jxv32sBDoP)
   
 <div>
