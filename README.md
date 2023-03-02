@@ -11,8 +11,8 @@
 
 Windows App </h2>
 
-[![Download for Windows (32-bit)](https://img.shields.io/badge/Download%20for%20Windows%20(32--bit)-v1.0.0.0-blue?style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator_Win32.exe)
-[![Download for Windows (64-bit)](https://img.shields.io/badge/Download%20for%20Windows%20(64--bit)-v1.0.0.0-blue?style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator_Win64.exe)
+[![Download for Windows (32-bit)](https://img.shields.io/badge/Download%20for%20Windows%20(32--bit)-v1.0.0.0-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator_Win32.exe)
+[![Download for Windows (64-bit)](https://img.shields.io/badge/Download%20for%20Windows%20(64--bit)-v1.0.0.0-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator_Win64.exe)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
 <a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
 
