@@ -1,29 +1,29 @@
 # [![Logo](https://user-images.githubusercontent.com/86963425/220344222-3c05930c-d7dd-4f80-8d00-271a9bbbad60.png)&nbsp;&nbsp;&nbsp;Drake Equation Calculator Website](https://nickmihal.github.io/Drake-Equation-Calculator/)
 
 <div align="center">
-
 <h2>
 
-Website Status </h2>
+Website Status 
 
 [![Website status](https://img.shields.io/uptimerobot/status/m793785666-85863a9bb342801a83a7a610?label=website%20status&style=for-the-badge&logo=WPExplorer&custom_uptime_ratio=100)](https://stats.uptimerobot.com/Jxv32sBDoP) 
 [![Website uptime](https://img.shields.io/uptimerobot/ratio/m793785666-85863a9bb342801a83a7a610?label=website%20uptime&style=for-the-badge&logo=WPExplorer)](https://stats.uptimerobot.com/Jxv32sBDoP)
-
+</h2>
 <h2>
 
-Windows App </h2>
+Windows App 
 
 [![Download for Windows (32-bit)](https://img.shields.io/badge/Download%20for%20Windows%20(32--bit)-v1.0.0.0-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator_Win32.exe)
 [![Download for Windows (64-bit)](https://img.shields.io/badge/Download%20for%20Windows%20(64--bit)-v1.0.0.0-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator_Win64.exe)
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
 <a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)](https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)
-
+</h2>
 </div>
 
 <h3>
 
-:iphone: There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) </h3>
+:iphone: There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) 
+</h3>
 
 <br>
 <h3><p align="center">:question: What is the Drake equation? :question:</p></h3>
