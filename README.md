@@ -2,10 +2,12 @@
 
 <div align="center">
 
+<h2>
+
+Website Status </h2>
+
 [![Website status](https://img.shields.io/uptimerobot/status/m793785666-85863a9bb342801a83a7a610?label=website%20status&style=for-the-badge&logo=WPExplorer&custom_uptime_ratio=100)](https://stats.uptimerobot.com/Jxv32sBDoP) 
 [![Website uptime](https://img.shields.io/uptimerobot/ratio/m793785666-85863a9bb342801a83a7a610?label=website%20uptime&style=for-the-badge&logo=WPExplorer)](https://stats.uptimerobot.com/Jxv32sBDoP)
-  
-<div>
 
 <h2>
 
@@ -16,6 +18,8 @@ Windows App </h2>
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
 <a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)](https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)
+
+<div>
 
 <h3>
 
