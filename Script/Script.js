@@ -170,7 +170,7 @@ $(document).ready(function () {
                    "fl," + flValue + "\n" +
                    "fi," + fiValue + "\n" +
                    "fc," + fcValue + "\n" +
-                   "L," + LValue + "\n";
+                   "L," + LValue + "\n"   ;
  
    // Create a data URI for the CSV string
    let csvDataUri = "data:text/csv;charset=utf-8," + encodeURIComponent(csvString);
@@ -178,7 +178,7 @@ $(document).ready(function () {
    // Create a link element and set its attributes to download the CSV file
    let linkElement = document.createElement("a");
    linkElement.setAttribute("href", csvDataUri);
-   linkElement.setAttribute("download", "results.csv");
+   linkElement.setAttribute("download", "Drake Equation Results.csv");
  
    // Simulate a click on the link element to trigger the download
    linkElement.click();
