@@ -16,7 +16,7 @@ Windows App
   
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
 <a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)](https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/cf6590f515b29b190d50b8c9ee6312a27f42f8655d70b715bae0a7f19ba6ebec/detection)](https://www.virustotal.com/gui/file/cf6590f515b29b190d50b8c9ee6312a27f42f8655d70b715bae0a7f19ba6ebec/detection)
 </h2>
 </div>
 
