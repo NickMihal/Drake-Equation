@@ -12,11 +12,11 @@ Website Status
 
 Windows App 
 
-[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows%20(v1.0.0.0)-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.1.0.0/Drake.Equation.Calculator.exe)
+[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows%20(v1.1.0.0)-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.1.0.0/Drake.Equation.Calculator.exe)
   
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
 <a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/cf6590f515b29b190d50b8c9ee6312a27f42f8655d70b715bae0a7f19ba6ebec/detection)](https://www.virustotal.com/gui/file/cf6590f515b29b190d50b8c9ee6312a27f42f8655d70b715bae0a7f19ba6ebec/detection)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/19c3544ba7412f37805f627df0c6cb15b06cdeb1b02e13581dd67865aca3b1a0/detection)](https://www.virustotal.com/gui/file/19c3544ba7412f37805f627df0c6cb15b06cdeb1b02e13581dd67865aca3b1a0/detection)
 </h2>
 </div>
 
