@@ -153,3 +153,41 @@ $(document).ready(function () {
       collapse.classList.remove("show");
    }
  }
+ document.getElementById("save-button").addEventListener("click", function() {
+   // Get the values entered in the text fields
+   let rValue = document.getElementById("R-number").value;
+   let fpValue = document.getElementById("fp-number").value;
+   let neValue = document.getElementById("ne-number").value;
+   let flValue = document.getElementById("fl-number").value;
+   let fiValue = document.getElementById("fi-number").value;
+   let fcValue = document.getElementById("fc-number").value;
+   let LValue = document.getElementById("L-number").value;
+   let resultValue = document.getElementById("result").value;
+    
+   // Create a CSV string containing the field names and values
+   let csvString = "Values\n" +
+                   ",\n" +
+                   "R," + rValue + "\n" +
+                   "fp," + fpValue + "\n" +
+                   "ne," + neValue + "\n" +
+                   "fl," + flValue + "\n" +
+                   "fi," + fiValue + "\n" +
+                   "fc," + fcValue + "\n" +
+                   "L," + LValue + "\n" +
+                   "\n" +
+                   "Results\n" +
+                   ",\n" +
+                   "N," + resultValue;
+                    
+   // Create a data URI for the CSV string
+   let csvDataUri = "data:text/csv;charset=utf-8," + encodeURIComponent(csvString);
+ 
+   // Create a link element and set its attributes to download the CSV file
+   let linkElement = document.createElement("a");
+   linkElement.setAttribute("href", csvDataUri);
+   linkElement.setAttribute("download", "Drake Equation Results.csv");
+ 
+   // Simulate a click on the link element to trigger the download
+   linkElement.click();
+ });
+ 
