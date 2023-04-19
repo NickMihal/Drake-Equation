@@ -162,8 +162,10 @@ $(document).ready(function () {
    let fiValue = document.getElementById("fi-number").value;
    let fcValue = document.getElementById("fc-number").value;
    let LValue = document.getElementById("L-number").value;
-   let resultValue = document.getElementById("result").value;
-    
+
+   // Get the Results
+   let resultValue = document.getElementById("result").textContent;
+
    // Create a CSV string containing the field names and values
    let csvString = "Values\n" +
                    ",\n" +
