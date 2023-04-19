@@ -162,16 +162,23 @@ $(document).ready(function () {
    let fiValue = document.getElementById("fi-number").value;
    let fcValue = document.getElementById("fc-number").value;
    let LValue = document.getElementById("L-number").value;
- 
+   let resultValue = document.getElementById("result").value;
+    
    // Create a CSV string containing the field names and values
-   let csvString = "R," + rValue + "\n" +
+   let csvString = "Values\n" +
+                   ",\n" +
+                   "R," + rValue + "\n" +
                    "fp," + fpValue + "\n" +
                    "ne," + neValue + "\n" +
                    "fl," + flValue + "\n" +
                    "fi," + fiValue + "\n" +
                    "fc," + fcValue + "\n" +
-                   "L," + LValue + "\n"   ;
- 
+                   "L," + LValue + "\n" +
+                   "\n" +
+                   "Results\n" +
+                   ",\n" +
+                   "N," + resultValue;
+                    
    // Create a data URI for the CSV string
    let csvDataUri = "data:text/csv;charset=utf-8," + encodeURIComponent(csvString);
  
