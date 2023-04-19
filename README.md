@@ -12,7 +12,7 @@ Website Status
 
 Windows App 
 
-[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows%20(v1.0.0.0)-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator.exe)
+[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows%20(v1.0.0.0)-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.1.0.0/Drake.Equation.Calculator.exe)
   
 [![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
 <a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
