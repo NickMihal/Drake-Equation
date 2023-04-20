@@ -10,18 +10,6 @@ Website Status
 </h2>
 <h2>
 
-Windows App 
-
-[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows%20(v1.0.0.0)-blue?logo=github&style=for-the-badge)](https://github.com/NickMihal/Drake-Equation-Calculator/releases/download/v1.0.0.0/Drake.Equation.Calculator.exe)
-  
-[![Platform](https://img.shields.io/badge/Platform-Windows-blue.svg?style=for-the-badge&logo=windows)](https://en.wikipedia.org/wiki/Microsoft_Windows)
-<a href="https://github.com/NickMihal/Drake-Equation-Calculator/releases" target="_blank"><img src="https://img.shields.io/badge/All%20Releases-View%20on%20GitHub-blue?logo=github&style=for-the-badge"></a>
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Scan%20Results-%234169E1?style=for-the-badge&logo=virustotal&link=https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)](https://www.virustotal.com/gui/file/1a51bc86b3d8c11b153644e71694ddbb1db16f3fe327c616fb6ff2d7bbd33cfa/detection)
-</h2>
-</div>
-
-<h3>
-
 :iphone: There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) 
 </h3>
 
