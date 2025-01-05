@@ -2,10 +2,7 @@
 
 <div align="center">
 <h2>
-
-:iphone: There is also an app for Android : [Drake Equation Calculator Android App](https://github.com/NickMihal/Drake-Equation-Calculator-Android/) 
-</h3>
-
+  
 <br>
 <h3><p align="center">:question: What is the Drake equation? :question:</p></h3>
 
